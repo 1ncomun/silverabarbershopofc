@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvera Barbershop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a1a; 
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            padding-bottom: 40px; 
+            max-width: 800px; 
+            width: 100%; 
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #ffffff;
+            font-size: 36px;
+            margin-bottom: 10px; 
+            transition: color 0.3s ease; 
+        }
+
+        .logo-container {
+            margin-top: 20px; 
+        }
+
+        .logo {
+            margin-bottom: 10px; 
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+            transition: filter 0.3s ease; 
+            border-radius: 50%; 
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+        }
+
+        .logo img:hover {
+            filter: brightness(1.2); 
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease; 
+        }
+
+        nav ul li a:hover {
+            color: #ffc107; 
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 20px;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .galeria {
+            text-align: center;
+            margin-top: 20px; 
+        }
+
+        .galeria h2 {
+            color: #ffc107; 
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px; 
+        }
+
+        .grid img {
+            width: 100%; 
+            max-width: 150px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease; 
+        }
+
+        .grid img:hover {
+            transform: scale(1.05); 
+        }
+
+        .marcar-horario {
+            text-align: center;
+            margin-top: 40px; 
+            color: #ffffff; 
+            font-size: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="https://cdn.discordapp.com/attachments/823446034604621844/1218348942115340338/1710547398986.png?ex=660756df&is=65f4e1df&hm=735034ec2a2c4165b4a68a010cbfa02b6b970213e966f3a4761908961de30b61&" alt="Logo da Silvera Barbershop">
+                </div>
+            </div>
+            <h1>Silvera Barbershop</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://instagram.com/silverabarbershop" target="_blank">Instagram</a></li>
+                    <li><a href="https://facebook.com/silverabarbershop" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/silverabarbershop" target="_blank">Twitter</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="galeria">
+            <h2>Galeria de Estilos</h2>
+            <div class="grid">
+                <img src="https://cdn.discordapp.com/attachments/823446034604621844/1218343262884986910/Screenshot_20240315_204053_Instagram.jpg?ex=66075195&is=65f4dc95&hm=d6c5cb849d10e095c69757d9c9908bffc20452e905e62a45b05132410c6178a2&" alt="Foto 1">
+                <img src="https://cdn.discordapp.com/attachments/823446034604621844/1218343263254220870/Screenshot_20240315_204042_Instagram.jpg?ex=66075195&is=65f4dc95&hm=acba134294cb9fe5a952598f3ebd610f26502b66e8911b4ca45fb00a600a8f1f&" alt="Foto 2">
+                <img src="https://cdn.discordapp.com/attachments/823446034604621844/1218343263581245571/Screenshot_20240315_204013_Instagram.jpg?ex=66075195&is=65f4dc95&hm=13189f5b4e3307f6b0ec641f9a13bddb30c7afc5da82fee16c9d45ee604fc4ec&" alt="Foto 3">
+                <img src="https://cdn.discordapp.com/attachments/823446034604621844/1218343263912591450/Screenshot_20240315_204002_Instagram.jpg?ex=66075195&is=65f4dc95&hm=057f58e2fbff3a363d520f51bec04256b226b496a4aeb3e6c366285cd6aab839&" alt="Foto 4">
+                <img src="https://cdn.discordapp.com/attachments/823446034604621844/1218343264214716529/Screenshot_20240315_203947_Instagram.jpg?ex=66075195&is=65f4dc95&hm=c658a2b796aac9e74206ad6fc58a568992ff74f48ec744196d2c76e0f2271771&" alt="Foto 5">
+                <img src="https://cdn.discordapp.com/attachments/823446034604621844/1218343264537546792/Screenshot_20240315_203930_Instagram.jpg?ex=66075195&is=65f4dc95&hm=8e34a0090dc4fc5462578013d725981397dfcb7dbeee50c4981a2c3d11a19198&" alt="Foto 6">
+                <img src="https://cdn.discordapp.com/attachments/823446034604621844/1218343264835338320/Screenshot_20240315_203917_Instagram.jpg?ex=66075196&is=65f4dc96&hm=55209a9b1af2d5b82ffa94d9a44f3982acba3d10438577783461351de6350690&" alt="Foto 7">
+                <img src="https://cdn.discordapp.com/attachments/823446034604621844/1218343265175212123/Screenshot_20240315_203902_Instagram.jpg?ex=66075196&is=65f4dc96&hm=711690d00888445073e0542ff676c80a229e58263c97b8becc73eb31e9b7979c&" alt="Foto 8">
+                <img src="https://cdn.discordapp.com/attachments/823446034604621844/1218343265493848195/Screenshot_20240315_203842_Instagram.jpg?ex=66075196&is=65f4dc96&hm=c8646085e1bc8cf554cc289a6406c04f43a8d80070922813443f47cbdebc995c&" alt="Foto 9">
+            </div>
+        </section>
+
+        <div class="marcar-horario">
+            <p>Marque seu horário conosco e experimente os melhores cortes e estilos!</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Silvera Barbershop. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/1gorb/cortar-o-cabelo', text: 'Click aqui e marque seu horário agora mesmo!', color: '#0069ff', textColor: '#ffffff', branding: undefined }); }</script>
+<!-- Calendly badge widget end -->
+</body>
+</html>
