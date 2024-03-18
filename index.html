@@ -10,20 +10,18 @@
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #1a1a1a; 
+            background-color: #1a1a1a; /* Fundo mais escuro */
         }
 
         .container {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 10px;
-            padding-bottom: 40px; 
-            max-width: 800px; 
-            width: 100%; 
+            padding-bottom: 40px; /* Aumenta o padding na parte inferior */
+            max-width: 375px; /* Largura do iPhone X */
+            width: 100%; /* Adiciona largura total */
+            margin: 0 auto; /* Centraliza horizontalmente */
+            box-sizing: border-box; /* Garante que a largura inclua padding e bordas */
         }
 
         header {
@@ -34,28 +32,28 @@
         header h1 {
             color: #ffffff;
             font-size: 36px;
-            margin-bottom: 10px; 
-            transition: color 0.3s ease; 
+            margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+            transition: color 0.3s ease; /* Transição suave para a cor do título */
         }
 
         .logo-container {
-            margin-top: 20px; 
+            margin-top: 20px; /* Adiciona margem superior para centralizar a logo */
         }
 
         .logo {
-            margin-bottom: 10px; 
+            margin-bottom: 10px; /* Reduz a margem inferior da logo */
         }
 
         .logo img {
             width: 100px;
             height: auto;
-            transition: filter 0.3s ease; 
-            border-radius: 50%; 
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+            transition: filter 0.3s ease; /* Transição suave para a logo */
+            border-radius: 50%; /* Torna a logo circular */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Adiciona uma sombra suave */
         }
 
         .logo img:hover {
-            filter: brightness(1.2); 
+            filter: brightness(1.2); /* Clareia a imagem quando o mouse passa sobre ela */
         }
 
         nav ul {
@@ -74,11 +72,11 @@
             text-decoration: none;
             font-weight: bold;
             font-size: 18px;
-            transition: color 0.3s ease; 
+            transition: color 0.3s ease; /* Transição suave para a cor dos links */
         }
 
         nav ul li a:hover {
-            color: #ffc107; 
+            color: #ffc107; /* Altera a cor do link ao passar o mouse sobre ele */
         }
 
         footer {
@@ -94,37 +92,37 @@
 
         .galeria {
             text-align: center;
-            margin-top: 20px; 
+            margin-top: 20px; /* Adiciona espaço entre o cabeçalho e as fotos */
         }
 
         .galeria h2 {
-            color: #ffc107; 
+            color: #ffc107; /* Altera a cor do texto */
         }
 
         .grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10px; 
+            grid-gap: 10px; /* Adiciona espaço entre as fotos */
         }
 
         .grid img {
-            width: 100%; 
-            max-width: 150px;
+            width: 100%; /* Define a largura total da imagem */
+            max-width: 150px; /* Define a largura máxima da imagem */
             height: auto;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s ease; 
+            border-radius: 10px; /* Adiciona bordas arredondadas */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra suave */
+            transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
         }
 
         .grid img:hover {
-            transform: scale(1.05); 
+            transform: scale(1.05); /* Aumenta ligeiramente o tamanho da imagem ao passar o mouse sobre ela */
         }
 
         .marcar-horario {
             text-align: center;
-            margin-top: 40px; 
-            color: #ffffff; 
-            font-size: 20px; 
+            margin-top: 40px; /* Adiciona espaço entre a galeria e o texto */
+            color: #ffffff; /* Cor do texto */
+            font-size: 20px; /* Tamanho da fonte */
         }
     </style>
 </head>
@@ -133,7 +131,7 @@
         <header>
             <div class="logo-container">
                 <div class="logo">
-                    <img src="https://cdn.discordapp.com/attachments/823446034604621844/1218348942115340338/1710547398986.png?ex=660756df&is=65f4e1df&hm=735034ec2a2c4165b4a68a010cbfa02b6b970213e966f3a4761908961de30b61&" alt="Logo da Silvera Barbershop">
+                    <img src="https://cdn.discordapp.com/attachments/823446034604621844/1218342067403755580/1710545752367.png?ex=66075078&amp;is=65f4db78&amp;hm=8461f447d653ccef23cd2bc59f2c25a4c1ef02dd3d6823fdf923d9739a14f449&amp;=&amp;format=webp&amp;quality=lossless" alt="Logo da Silvera Barbershop">
                 </div>
             </div>
             <h1>Silvera Barbershop</h1>
@@ -166,9 +164,10 @@
         </div>
 
         <footer>
-            <p>&copy; 2020 Silvera Barbershop. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Silvera Barbershop. Todos os direitos reservados.</p>
         </footer>
     </div>
+</body>
     <!-- Calendly badge widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
